@@ -40,9 +40,11 @@ typedef enum {
                                                 * execblock doesn't used FPR
                                                 */
   // architecture specific option between 24 and 31
-  _QBDI_EI(OPT_ATT_SYNTAX) = 1 << 24, /*!< Used the AT&T syntax for
-                                       * instruction disassembly
-                                       */
+  _QBDI_EI(OPT_ATT_SYNTAX) = 1 << 24,   /*!< Used the AT&T syntax for
+                                         * instruction disassembly
+                                         */
+  _QBDI_EI(OPT_ENABLE_FS_GS) = 1 << 25, /*!< Enable Backup/Restore of FS/GS
+                                         * segment */
 } Options;
 
 _QBDI_ENABLE_BITMASK_OPERATORS(Options)
