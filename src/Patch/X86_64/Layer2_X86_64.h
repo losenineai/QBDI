@@ -116,6 +116,8 @@ llvm::MCInst popf64();
 
 llvm::MCInst ret();
 
+llvm::MCInst nop();
+
 // low level layer 2 architecture abtraction
 
 llvm::MCInst movrr(unsigned int dst, unsigned int src);
